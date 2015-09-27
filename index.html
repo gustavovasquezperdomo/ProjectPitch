@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Analysis Tool</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Technical Analysis Tool">
+  <meta name="author" content="Archon Financial Management &amp; Investments">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Technical Analysis Tool</h1>
+    <h2>a free time developement</h2>
+    <p>Archon Financial Management &amp; Investments<br/>Financial Analysis</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Technical Analysis Tool</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>An attempt to understand financial markets</h1>
+
+<p>welcome to the Technical Analysis Tool Pitch, you can find it and try it at
+<a href="http://archonfmi.shinyapps.io/project">http://archonfmi.shinyapps.io/project</a></p>
+
+<p>Objectives</p>
+
+<ol>
+<li>To get a visual of three stocks (Apple, Google and Microsft)</li>
+<li>Begin explorations with four technical indicators</li>
+<li>Exchange chart types, according to your preferences</li>
+<li>Increase/Decrease the time period to analize </li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Potential Market</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Archon Financial Management &amp; Investment is an international company based in the USA, which brings financial studies and recommendations to companies and investors</p>
+
+<p>There are more than 5.000 companies searching for a service like this.</p>
+
+<ol>
+<li>real time actualization</li>
+<li>forecasting capabilities</li>
+<li>visual representation of the data</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>What can you do with the Technical Analysis Tool?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>By now, you can check and analyse three of the most important stocks in the world: Apple, Google and Microsoft. In a future we&#39;ll be providing you with machine learning forecasting.</p>
+
+<figure>
+  <img src="TAT.jpg" alt="Technical Analysis Tool" width="900" height="400">
+</figure>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Do you wanna give it a try?</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">require(quantmod)
+getSymbols(&quot;AAPL&quot;)
+chartSeries(AAPL, subset = &quot;last 24 weeks&quot;, theme = &quot;white&quot;, TA = &quot;addRSI();addMACD();addBBands()&quot;) 
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+<p>and that&#39;s it!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Technical Analysis Tool'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Potential Market'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='What can you do with the Technical Analysis Tool?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Do you wanna give it a try?'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -1,0 +1,10 @@
+base
+slidify
+knitr
+shiny
+slidifyLibraries
+zoo
+xts
+TTR
+quantmod
+ggplot2
